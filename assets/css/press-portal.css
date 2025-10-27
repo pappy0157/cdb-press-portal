@@ -1,0 +1,66 @@
+/* Hero */
+.cdb-pp-hero{margin:24px 0;padding:16px;border-radius:16px;background:#0a0a0a;color:#fff}
+.cdb-pp-hero-inner{display:grid;gap:16px;grid-template-columns:1.3fr 1fr;align-items:center}
+.cdb-pp-hero-media img{width:100%;height:auto;border-radius:12px}
+.cdb-pp-hero-title{font-size:clamp(20px,2.6vw,32px);margin:.3em 0}
+.cdb-pp-hero-excerpt{opacity:.9}
+.cdb-pp-cta{display:inline-block;margin-top:8px;padding:10px 16px;border-radius:999px;background:#fff;color:#111;text-decoration:none}
+.cdb-pp-badge{display:inline-block;font-size:12px;padding:4px 8px;border-radius:999px;background:#eef;border:1px solid #ccd;margin-right:8px}
+.cdb-pp-badge--accent{background:#ffe9cc;border-color:#ffc78e}
+.cdb-pp-company{font-size:12px;padding:2px 8px;border-radius:999px;background:#eef7ff;border:1px solid #cde4ff}
+
+/* Sections & grid */
+.cdb-pp-section{margin:32px 0}
+.cdb-pp-section-hd h3{font-size:20px;margin:0 0 12px}
+.cdb-pp-grid{display:grid;gap:16px;grid-template-columns:repeat(3,1fr)}
+.cdb-pp-card{background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden;transition:box-shadow .2s}
+.cdb-pp-card:hover{box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.cdb-pp-thumbwrap{aspect-ratio:16/9;background:#f6f6f6}
+.cdb-pp-thumbwrap img{width:100%;height:100%;object-fit:cover}
+.cdb-pp-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 12px 0 12px}
+.cdb-pp-time{font-size:12px;color:#666}
+.cdb-pp-title{font-size:16px;line-height:1.35;padding:8px 12px 4px;margin:0}
+.cdb-pp-title a{text-decoration:none;color:#111}
+.cdb-pp-share{display:flex;gap:8px;padding:0 12px 12px}
+.cdb-pp-share-btn{padding:6px 10px;border-radius:8px;border:1px solid #ddd;background:#fafafa;cursor:pointer}
+
+.cdb-pp-more{display:block;margin:16px auto 0;padding:10px 18px;border-radius:10px;border:1px solid #ddd;background:#fafafa;cursor:pointer}
+.cdb-pp-empty{color:#666}
+
+/* Tax grid */
+.cdb-pp-tax-grid{display:grid;gap:12px;grid-template-columns:repeat(6,1fr)}
+.cdb-pp-tax-item{display:flex;justify-content:space-between;align-items:center;padding:10px 12px;border:1px solid #eee;border-radius:10px;background:#fff;text-decoration:none;color:#111}
+.cdb-pp-tax-name{font-weight:600}
+.cdb-pp-tax-count{font-size:12px;color:#666}
+
+/* Ranking */
+.cdb-pp-rank{list-style:decimal inside;padding:0;margin:0}
+.cdb-pp-rank li{display:flex;justify-content:space-between;gap:8px;border-bottom:1px dashed #eee;padding:8px 0}
+.cdb-pp-rank a{text-decoration:none;color:#111;flex:1}
+.cdb-pp-rank-views{color:#666;font-variant-numeric:tabular-nums}
+
+/* Company grid */
+.cdb-pp-company-grid{display:grid;gap:16px;grid-template-columns:repeat(4,1fr)}
+.cdb-pp-company-card{display:block;text-decoration:none;color:#111;border:1px solid #eee;border-radius:12px;padding:12px;background:#fff}
+.cdb-pp-company-logo-wrap{aspect-ratio:1/1;background:#f8f8f8;border-radius:10px;overflow:hidden;margin-bottom:8px}
+.cdb-pp-company-logo{width:100%;height:100%;object-fit:contain}
+.cdb-pp-company-name{font-weight:700;margin-bottom:4px}
+.cdb-pp-company-count{font-size:12px;color:#666}
+
+/* Filter */
+.cdb-pp-filter{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.cdb-pp-filter input,.cdb-pp-filter select{padding:8px;border:1px solid #ddd;border-radius:8px}
+.cdb-pp-filter-do{padding:8px 12px;border-radius:8px;border:1px solid #ddd;background:#fafafa;cursor:pointer}
+.cdb-pp-filter-results.is-loading{opacity:.6;pointer-events:none}
+
+/* Responsive */
+@media (max-width: 1024px){
+  .cdb-pp-hero-inner{grid-template-columns:1fr}
+  .cdb-pp-grid{grid-template-columns:repeat(2,1fr)}
+  .cdb-pp-tax-grid{grid-template-columns:repeat(4,1fr)}
+  .cdb-pp-company-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width: 600px){
+  .cdb-pp-grid{grid-template-columns:1fr}
+  .cdb-pp-tax-grid{grid-template-columns:repeat(2,1fr)}
+}
