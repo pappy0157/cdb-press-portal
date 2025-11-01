@@ -1,1 +1,0 @@
-<?php class CDB_PP_Company { public static function init() {} }

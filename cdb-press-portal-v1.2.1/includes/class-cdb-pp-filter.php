@@ -1,1 +1,0 @@
-<?php class CDB_PP_Filter { public static function init() {} }
