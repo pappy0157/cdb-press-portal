@@ -1,1 +1,0 @@
-<?php class CDB_PP_Schema { public static function init() {} }
