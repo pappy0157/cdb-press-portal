@@ -1,1 +1,0 @@
-<?php if ( ! defined( 'ABSPATH' ) ) { exit; } class CDB_PP_Schema { public static function init() {} }
